@@ -16,6 +16,7 @@ window = app.Tk()
 window.title("Password Generator")
 window.config(bg=inherit)
 
+
 #elements
 
 scrollbar = Scrollbar(window)
@@ -48,7 +49,10 @@ def main():
     pass_list.pack()
     add_space(window, 1)
 
-    scrollbar.config( command = pass_list.yview )
+    scrollbar.config(command = pass_list.yview)
+
+    messagebox.showinfo("Credit", "This was programmed by Rejwan Islam Rizvy #RIR360")
+
     window.mainloop()
 
 
